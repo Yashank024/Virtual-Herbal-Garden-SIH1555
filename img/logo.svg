@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240" height="60" viewBox="0 0 240 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leafGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC71"/>
+      <stop offset="100%" style="stop-color:#27AE60"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <g transform="translate(15,38)">
+    <!-- Multiple decorative leaves -->
+    <path class="leaf" d="M15,0 C15,0 25,-20 0,-20 C0,-20 0,0 15,0 Z" 
+          fill="url(#leafGradient)" filter="url(#shadow)" 
+          transform="rotate(-15)"/>
+    <path class="leaf" d="M12,2 C12,2 20,-15 0,-15 C0,-15 0,2 12,2 Z" 
+          fill="url(#leafGradient)" filter="url(#shadow)" 
+          transform="translate(8,-5) rotate(15)"/>
+    
+    <!-- Text with enhanced styling -->
+    <text x="35" y="0" filter="url(#shadow)" 
+          style="font-family: 'Playfair Display', serif; font-weight: 600; font-size: 24px; fill: #2C3E50;">
+      Virtual Herbal
+    </text>
+    <text x="35" y="20" filter="url(#shadow)" 
+          style="font-family: 'Playfair Display', serif; font-weight: 700; font-size: 28px; fill: #2ECC71;">
+      Garden
+    </text>
+  </g>
+</svg>

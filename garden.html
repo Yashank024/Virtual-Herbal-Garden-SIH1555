@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Virtual Herbal Garden</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="garden.css">
+</head>
+<body>
+    <div id="garden-container"></div>
+    
+    <div class="ui-overlay">
+        <div class="top-bar">
+            <a href="virtual.html" class="back-button">← Back to Home</a>
+            <h1>Virtual Herbal Garden</h1>
+        </div>
+        <div class="info-panel">
+            <h2>Selected Plant</h2>
+            <div id="plant-info">
+                <p>Click on a plant to learn more about it</p>
+            </div>
+        </div>
+        <div class="controls-hint">
+            <p>Use W,A,S,D to move | Mouse to look around | Click plants to interact</p>
+        </div>
+    </div>
+
+    <!-- Three.js and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/PointerLockControls.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/DRACOLoader.js"></script>
+    <script src="garden.js"></script>
+</body>
+</html>
