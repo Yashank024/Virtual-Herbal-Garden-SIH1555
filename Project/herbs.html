@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herb Collection - Virtual Herbal Garden</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Virtual Herbal Garden</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="herbs.html">Herbs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="herbs-hero text-center" data-aos="fade-up">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">Discover Nature's Medicine Cabinet</h1>
+            <p class="lead mb-5">Explore our carefully curated collection of medicinal herbs and their amazing health benefits</p>
+        </div>
+    </section>
+
+    <!-- Herbs Collection -->
+    <section class="herbs-collection py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Tulsi (Holy Basil) -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/basil-in-table.jpg" alt="Tulsi (Holy Basil)" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Tulsi (Holy Basil)</h3>
+                            <p class="herb-description">Sacred herb in Ayurvedic medicine, known for its powerful healing properties.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Boosts immunity</li>
+                                    <li>Reduces stress and anxiety</li>
+                                    <li>Supports respiratory health</li>
+                                    <li>Natural anti-inflammatory</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mint -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/mint-on-table.jpg" alt="Mint" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Mint</h3>
+                            <p class="herb-description">Refreshing herb with cooling properties and versatile uses.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Aids digestion</li>
+                                    <li>Relieves nausea</li>
+                                    <li>Fresh breath</li>
+                                    <li>Reduces headaches</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rosemary -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/rosemary-plants.jpg" alt="Rosemary" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Rosemary</h3>
+                            <p class="herb-description">Aromatic herb known for its cognitive-boosting properties.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Improves memory</li>
+                                    <li>Reduces inflammation</li>
+                                    <li>Boosts circulation</li>
+                                    <li>Antimicrobial properties</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lavender -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/Lavender.jpg" alt="Lavender" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Lavender</h3>
+                            <p class="herb-description">Calming herb famous for its soothing aroma and therapeutic properties.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Promotes relaxation</li>
+                                    <li>Improves sleep quality</li>
+                                    <li>Reduces anxiety</li>
+                                    <li>Natural antiseptic</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chamomile -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/chamomile.jpg" alt="Chamomile" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Chamomile</h3>
+                            <p class="herb-description">Gentle herb known for its calming and digestive benefits.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Promotes better sleep</li>
+                                    <li>Soothes digestive issues</li>
+                                    <li>Reduces inflammation</li>
+                                    <li>Calms anxiety</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thyme -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/thyme.jpeg" alt="Thyme" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Thyme</h3>
+                            <p class="herb-description">Powerful antimicrobial herb with respiratory benefits.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Supports respiratory health</li>
+                                    <li>Natural antibiotic</li>
+                                    <li>Boosts immunity</li>
+                                    <li>Antioxidant properties</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sage -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/sage.webp" alt="Sage" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Sage</h3>
+                            <p class="herb-description">Ancient herb revered for its medicinal and culinary uses.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Improves memory</li>
+                                    <li>Reduces inflammation</li>
+                                    <li>Supports oral health</li>
+                                    <li>Aids digestion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oregano -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/Oregano.jpg" alt="Oregano" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Oregano</h3>
+                            <p class="herb-description">Mediterranean herb with powerful antimicrobial properties.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Natural antibiotic</li>
+                                    <li>Antiviral properties</li>
+                                    <li>Supports immune system</li>
+                                    <li>Anti-inflammatory</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lemon Balm -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/Lemon Balm.jpg" alt="Lemon Balm" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Lemon Balm</h3>
+                            <p class="herb-description">Calming herb with citrus fragrance and mood-lifting properties.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Reduces stress</li>
+                                    <li>Improves sleep</li>
+                                    <li>Aids digestion</li>
+                                    <li>Enhances mood</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calendula -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="herb-card">
+                        <div class="herb-image">
+                            <img src="img/herbs/Calendula.webp" alt="Calendula" class="img-fluid">
+                        </div>
+                        <div class="herb-content">
+                            <h3>Calendula</h3>
+                            <p class="herb-description">Healing herb known for its skin-soothing properties.</p>
+                            <div class="benefits-list">
+                                <h4>Benefits:</h4>
+                                <ul>
+                                    <li>Heals wounds</li>
+                                    <li>Reduces inflammation</li>
+                                    <li>Supports skin health</li>
+                                    <li>Boosts immune system</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Virtual Herbal Garden</h5>
+                    <p>Exploring the healing power of nature through traditional herbal wisdom.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>&copy; 2024 Virtual Herbal Garden. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>

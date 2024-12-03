@@ -1,0 +1,208 @@
+/* Modern Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Modern Nature-Inspired Color Palette */
+  --primary: #2ECC71;
+  --primary-dark: #27AE60;
+  --secondary: #95A5A6;
+  --accent: #E74C3C;
+  --dark: #2C3E50;
+  --light: #ECF0F1;
+  --white: #FFFFFF;
+  
+  /* Custom Properties */
+  --header-height: 80px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modern Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--light);
+  color: var(--dark);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* Modern Navbar Styles */
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: var(--transition);
+}
+
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: var(--transition);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Modern Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 0;
+  perspective: 1000px;
+}
+
+.hero-content {
+  transform-style: preserve-3d;
+  animation: float 6s ease-in-out infinite;
+}
+
+.hero-image {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: rotateY(-15deg) rotateX(5deg);
+  transition: var(--transition);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.hero-image:hover {
+  transform: rotateY(0deg) rotateX(0deg);
+}
+
+/* Modern Card Styles */
+.modern-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: translateY(0);
+}
+
+.modern-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Scroll Animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition);
+}
+
+.scroll-animate.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modern Button Styles */
+.btn-modern {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: var(--transition);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.btn-modern:hover::before {
+  width: 100%;
+}
+
+/* 3D Card Flip Effect */
+.flip-card {
+  perspective: 1000px;
+  height: 300px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-image {
+    transform: none;
+  }
+  
+  .modern-card {
+    margin-bottom: 2rem;
+  }
+}
